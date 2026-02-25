@@ -1,4 +1,4 @@
-# src/pipeline.py
+# src/pipeline.py manish
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from src.retriever import get_retriever
