@@ -6,9 +6,10 @@ from langchain.chains import RetrievalQA
 
 def build_qa_chain(retriever):
     llm = ChatOpenAI(
-        model="gpt-4o-mini",
+        model="gpt-3.5-turbo",
         temperature=0,
     )
+
 
     qa_chain = RetrievalQA.from_chain_type(
         llm=llm,
