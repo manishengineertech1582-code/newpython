@@ -15,8 +15,7 @@ class QueryRequest(BaseModel):
 
 @router.post("/ask")
 def ask_question(request: QueryRequest):
-    result = qa_chain.invoke({"query": request.question})
-
+    result = qa_chain({"query": request.question})
     return {
         "answer": result["result"],
         "sources": [doc.metadata for doc in result["source_documents"]],
