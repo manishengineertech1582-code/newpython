@@ -1,4 +1,4 @@
-from langchain.vectorstores import FAISS
+from langchain_community.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
 from src.retriever import get_retriever
 from src.generator import build_qa_chain
