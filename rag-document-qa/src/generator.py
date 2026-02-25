@@ -1,6 +1,7 @@
 # src/generator.py
-from langchain_openai import ChatOpenAI          
-from langchain.chains import RetrievalQA         
+
+from langchain.chat_models import ChatOpenAI
+from langchain.chains import RetrievalQA
 
 def build_qa_chain(retriever):
     llm = ChatOpenAI(temperature=0)

@@ -1,5 +1,5 @@
 from langchain_community.vectorstores import FAISS
-from langchain_openai import OpenAIEmbeddings
+from langchain.embeddings import OpenAIEmbeddings
 from src.retriever import get_retriever
 from src.generator import build_qa_chain
 
